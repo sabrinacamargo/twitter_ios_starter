@@ -40,7 +40,7 @@
             </objects>
             <point key="canvasLocation" x="93.599999999999994" y="125.4872563718141"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Home-->
         <scene sceneID="qrB-gl-lcX">
             <objects>
                 <tableViewController modalPresentationStyle="fullScreen" id="9Zh-i6-Ugz" sceneMemberID="viewController">
@@ -63,7 +63,7 @@
                             <outlet property="delegate" destination="9Zh-i6-Ugz" id="Tmm-9f-auf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="hgr-Uz-30z"/>
+                    <navigationItem key="navigationItem" title="Home" id="hgr-Uz-30z"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="twv-nh-PHL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,7 +76,15 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="epR-4W-FKu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.2990200536" green="0.62308989209999999" blue="0.93055647509999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.29803922770000002" green="0.61960786580000005" blue="0.92156863209999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Ye-rH-mjN">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="9Zh-i6-Ugz" kind="relationship" relationship="rootViewController" id="0bG-SC-n26"/>
                     </connections>
