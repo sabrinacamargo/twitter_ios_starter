@@ -27,14 +27,14 @@ class TweetCellTableViewCell: UITableViewCell {
         if (toBeFavorited) {
             TwitterAPICaller.client?.favoriteTweet(tweetId: tweetId, success: {
                 self.setFavorited(true)
-                print("Success")
+                //print("Success")
             }, failure: { (error) in
                 print("Favorite did not succeed: \(error)")
             })
         } else {
             TwitterAPICaller.client?.unfavoriteTweet(tweetId: tweetId, success: {
                 self.setFavorited(false)
-                print("Success pt2")
+                //print("Success pt2")
             }, failure: { (error) in
                 print("Unfavorite did not succeed: \(error)")
             })
